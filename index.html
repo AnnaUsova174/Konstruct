@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konstruct Template</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Верхняя часть страницы -->
+    <section class="home">
+      <div class="container home__container">
+        <img
+          class="home__logo"
+          src="./assets/icons/projeco-logo-white.svg"
+          alt="Лого"
+        />
+        <div class="home__content">
+          <h1 class="home__title">PARTNER WITH KONSTRUCT</h1>
+          <p class="text__home">
+            An award-winning construction management firm
+          </p>
+        </div>
+        <p class="home__scroll"><a href="#story">SCROLL DOWN</a></p>
+      </div>
+    </section>
+    <!-- Раздел навигации -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <a href="#"
+              ><img src="./assets/icons/projeco-logo-black.svg" alt="Лого"
+            /></a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">HOME</a></li>
+            <li class="nav__item"><a href="#">ABOUT</a></li>
+            <li class="nav__item"><a href="#">SERVICES</a></li>
+            <li class="nav__item"><a href="#">WORK</a></li>
+            <li class="nav__item"><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Раздел Our story -->
+      <section class="story" id="story">
+        <div class="container">
+          <h2 class="story__title-main">OUR STORY</h2>
+          <div class="stoty__inner">
+            <div class="story__left">
+              <h3 class="story__title-text">
+                Founded in 2011 by John Mathew Smith,
+                <span class="accent_color">Konstruct</span> has become the
+                number one construction management
+              </h3>
+              <p class="story___text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+              </p>
+            </div>
+            <div class="story__rigt">
+              <div class="story__item">WE PLAN</div>
+              <div class="story__item">WE MANAGE</div>
+              <div class="story__item">WE BUILD</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities">
+        <div class="container">
+          <div class="capabilities__top">
+            <h2 class="capabilities__title-main">OUR CAPABILITIES</h2>
+            <p class="capabilities__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+            <button class="button button__text">ALL SERVICES</button>
+          </div>
+          <div class="capabilities__cards">
+            <!-- 1ая карточка секции -->
+            <div class="capabilities__card">
+              <img
+                class="card__icon"
+                src="./assets/icons/PROJECT.png"
+                alt="PROJECT AND CONSTRUCTION MANAGEMENT"
+              />
+              <h3 class="capabilities__title-card">
+                PROJECT AND CONSTRUCTION <br />
+                MANAGEMENT
+              </h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat.
+              </p>
+            </div>
+            <!-- 2ая карточка секции -->
+            <div class="capabilities__card">
+              <img
+                class="card__icon"
+                src="./assets/icons/STRUCTURE.png"
+                alt="STRUCTURE AUDIT AND MAINTENANCE"
+              />
+              <h3 class="capabilities__title-card">
+                STRUCTURE AUDIT AND MAINTENANCE
+              </h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat.
+              </p>
+            </div>
+            <!-- 3ая карточка секции -->
+            <div class="capabilities__card">
+              <img
+                class="card__icon"
+                src="./assets/icons/FACTORY.png"
+                alt="FACTORY CONSTRUCTION AND MODELING"
+              />
+              <h3 class="capabilities__title-card">
+                FACTORY CONSTRUCTION AND MODELING
+              </h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="container__contact">
+            <h2 class="contact_title">Want to build something amazing?</h2>
+            <button class="button button__text button-contact">
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__form">
+          <h3 class="footer__form-title">Newsletter Signup</h3>
+          <div class="form__button">
+            <input
+              type="email"
+              id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="test@youremail.com"
+            />
+            <button class="button button__text" type="submit">SIGNUP</button>
+          </div>
+        </div>
+        <p class="footer__text">
+          © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

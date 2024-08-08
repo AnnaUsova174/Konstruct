@@ -1,0 +1,342 @@
+@import url("./fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  /* Сбрасываем стили браузере */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: unset;
+  transition: 1s;
+}
+body {
+  font-family: "Bebas Neue" "Open Sans" sans-serif;
+}
+
+.home {
+  background-image: url(./assets/images/konstruct.webp);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 41px 0 71px 0;
+}
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.home__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.home__content {
+  margin-top: 305px;
+  flex-grow: 1;
+}
+.home__logo {
+  width: 102px;
+  height: 23px;
+}
+.home__title {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  letter-spacing: 5.709px;
+}
+.text__home {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+}
+.home__scroll {
+  margin-top: 221px;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3.7px;
+  cursor: pointer;
+}
+/* Раздел навигации */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #48555b;
+}
+.nav li a:hover {
+  color: #00a4e5;
+  transition: 0.3;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+  gap: 42px;
+  padding: 25px 0;
+  letter-spacing: 1.091px;
+}
+/* Раздел Our story */
+.story {
+  padding-top: 48px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.stoty__inner {
+  display: flex;
+  margin-top: 77px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.story__left {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.story__title-main {
+  text-align: center;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+}
+.story__title-main:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+  display: block;
+  margin: 10px auto 0;
+}
+.story__title-text {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.188px;
+  width: 405px;
+}
+.accent_color {
+  color: #16ace8;
+}
+.story___text {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.188px;
+  margin: 0 auto;
+}
+.story__rigt {
+  display: flex;
+  margin-left: 80px;
+  justify-content: space-between;
+  gap: 20px;
+  /* align-items: flex-end; */
+  /* margin-left: auto; */
+}
+.story__item {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 800;
+  width: 140px;
+  height: 224px;
+  padding: 15px;
+}
+.story__item:nth-child(1) {
+  background-image: url(./assets/images/PLAN.png);
+}
+.story__item:nth-child(2) {
+  background-image: url(./assets/images/MANAGE.png);
+}
+.story__item:nth-child(3) {
+  background-image: url(./assets/images/BUILD.png);
+}
+
+/* Секция OUR CAPABILITIES */
+.capabilities {
+  padding-top: 128px;
+}
+.capabilities__top {
+  display: flex;
+}
+.capabilities__title-main {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.306px;
+}
+.capabilities__title-main:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+  display: block;
+  margin-top: 10px;
+}
+.capabilities__text {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 19px;
+  max-width: 405px;
+  margin-left: 155px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  background-color: #00a4e5;
+  transition: 0.3;
+}
+button:hover {
+  background-color: #00a4e5a0;
+  cursor: pointer;
+}
+.button__text {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 700;
+}
+.capabilities__cards {
+  display: flex;
+  margin-top: 78px;
+  justify-content: space-between;
+}
+.capabilities__card {
+  border: 1px solid #e6e6e6;
+  padding: 38px 22px;
+  width: 295px;
+  height: 330px;
+  transition: 0.3s;
+}
+.capabilities__card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.card__icon {
+  min-width: 65px;
+  height: 75px;
+}
+.capabilities__title-card {
+  margin-top: 25px;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.427px;
+}
+.card__text {
+  margin-top: 13px;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.188px;
+}
+/* Секция "Want to build something amazing?" */
+.contact {
+  /* background-color: #171819; */
+  background-image: url(./assets/images/img_footer.png);
+  min-height: 498px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  border-style: none;
+}
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_title {
+  color: #48555b;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  width: 350px;
+}
+.button-contact {
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.button__text {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+/* Секция footer */
+.footer {
+  background-color: #171819;
+  /* margin-top: -2px; */
+  max-height: 160px;
+  border-style: none;
+  padding: 35px;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#email {
+  /* margin-left: 70px; */
+  width: 250px;
+  padding: 10px 16px;
+  height: 40px;
+  border-style: none;
+}
+.footer__form {
+  display: flex;
+  min-width: 685px;
+  max-height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__form-title {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+}
+.form__button {
+  display: flex;
+}
+
+.footer__text {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 11px;
+  letter-spacing: 0.846px;
+  text-align: center;
+  margin-top: 50px;
+}
